@@ -1,7 +1,6 @@
 #pragma once
 #include "pch.h"
 #include "Sharnin_Auto.h"
-#include <vector>
 class Sharnin_AutoCompany
 {
 public:

@@ -1,12 +1,8 @@
 #pragma once
-#include "pch.h"
-
-
-
 class Sharnin_Auto: public CObject
 {
 public:
-    DECLARE_SERIAL(Sharnin_Auto)
+    DECLARE_SERIAL(Sharnin_Auto);
     Sharnin_Auto();
     ~Sharnin_Auto();
     virtual void ReadAutos();

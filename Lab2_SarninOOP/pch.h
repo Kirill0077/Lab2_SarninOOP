@@ -9,15 +9,13 @@
 
 // Добавьте сюда загоorловочные файлы для предварительной компиляции
 #include "framework.h"
-#include <vector>
 #include <iostream>
+#include <vector>
 #include <fstream>
-#include <string>
-#include "Sharnin_AutoCompany.h"
-#include "Sharnin_Auto.h"
-#include "Sharnin_SUV.h"
 #include <memory>
+#include <string>
 using namespace std;
+
 #endif //PCH_H
 
 

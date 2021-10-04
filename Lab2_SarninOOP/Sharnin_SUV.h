@@ -1,4 +1,5 @@
 #pragma once
+#include "pch.h"
 #include "Sharnin_Auto.h"
 
 class Sharnin_SUV :

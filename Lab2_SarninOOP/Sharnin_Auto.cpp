@@ -1,4 +1,6 @@
 #include "pch.h"
+#include "Sharnin_Auto.h"
+
 IMPLEMENT_SERIAL(Sharnin_Auto, CObject, VERSIONABLE_SCHEMA | 0)
 void Sharnin_Auto::ReadAutos()
 {

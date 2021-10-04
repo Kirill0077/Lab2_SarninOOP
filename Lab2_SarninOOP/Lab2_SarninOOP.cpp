@@ -4,6 +4,9 @@
 #include "pch.h"
 #include "framework.h"
 #include "Lab2_SarninOOP.h"
+#include "Sharnin_Auto.h"
+#include "Sharnin_AutoCompany.h"
+#include "Sharnin_SUV.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif

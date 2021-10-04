@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "Sharnin_Auto.h"
+#include "Sharnin_AutoCompany.h"
+#include <vector>
 void Sharnin_AutoCompany::AddAuto(shared_ptr<Sharnin_Auto> Auto)
 {
 	Company.push_back(Auto);
@@ -7,13 +9,19 @@ void Sharnin_AutoCompany::AddAuto(shared_ptr<Sharnin_Auto> Auto)
 
 void Sharnin_AutoCompany ::PrintAutos()
 {
-	if (Company.empty()) {
-		cout << "Group is empty." << endl;
+	if (Company.empty()) 
+	{
+		cout << "Company is empty." << endl;
 		return;
 	}
-	for (auto sptr : Company) {
-		sptr->PrintAutos();
+	else
+	{
+		for (auto sptr : Company) 
+		{
+			sptr->PrintAutos();
+		}
 	}
+	
 }
 
 
