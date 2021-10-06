@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Sharnin_SUV.h"
-IMPLEMENT_SERIAL(Sharnin_Auto, Sharnin_SUV, VERSIONABLE_SCHEMA | 0)
+IMPLEMENT_SERIAL(Sharnin_SUV, Sharnin_Auto, VERSIONABLE_SCHEMA | 0)
 
 void Sharnin_SUV::ReadAutos()
 {
