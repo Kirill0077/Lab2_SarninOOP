@@ -5,8 +5,8 @@ class Sharnin_SUV :
 {
 public:
     DECLARE_SERIAL(Sharnin_SUV);
-    CString drive;
-    CString engine_type;   
+    string drive;
+    string engine_type;   
     Sharnin_SUV();
     ~Sharnin_SUV();
     void PrintAutos();

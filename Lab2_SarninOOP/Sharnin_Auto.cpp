@@ -1,16 +1,16 @@
 #include "pch.h"
 #include "Sharnin_Auto.h"
+#include "Sharnin_utils.h"
 
 IMPLEMENT_SERIAL(Sharnin_Auto, CObject, VERSIONABLE_SCHEMA | 0)
+
+
 void Sharnin_Auto::ReadAutos()
 {
-	string strr;
 	cout << "Type the Auto Model: ";
-	cin >> strr;
-	Model = strr.c_str();
+	cin >> Model;
 	cout << "Type the Auto Colour: ";
-	cin >> strr;
-	Colour = strr.c_str();
+	cin >> Colour;
 	cout << "Type the Auto Motor Output (horse-power): ";
 	cin >> MotorOutput;
 	cout << "Type the Auto Engine Capacity (liter): ";
@@ -31,7 +31,12 @@ Sharnin_Auto::~Sharnin_Auto()
 
 void Sharnin_Auto::PrintAutos()
 {
-	cout << "Model " << this->Model << " Color" << this->Colour << " Motor " << this->MotorOutput << " EngineCapacity " << this->EngineCapacity << " Price " << this->Price << endl;
+	cout << "Model " << Model << endl;
+	cout << " Color" << Colour << endl;
+	cout << " Motor " << MotorOutput << endl;
+	cout << " EngineCapacity " << EngineCapacity << endl;
+	cout << " Price " << Price << endl;
+	cout << "++++++++++++++++++++++++++" << endl;
 }
 
 void Sharnin_Auto::Serialize(CArchive& ar)

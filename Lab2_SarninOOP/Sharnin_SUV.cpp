@@ -1,34 +1,39 @@
 #include "pch.h"
 #include "Sharnin_SUV.h"
+#include "Sharnin_utils.h"
 IMPLEMENT_SERIAL(Sharnin_SUV, Sharnin_Auto, VERSIONABLE_SCHEMA | 0)
+
 
 void Sharnin_SUV::ReadAutos()
 {
-	string strr;
 	cout << "Type the Auto Model: ";
-	cin >> strr;
-	Model = strr.c_str();
+	cin >> Model;
 	cout << "Type the Auto Colour: ";
-	cin >> strr;
-	Colour = strr.c_str();
+	cin >> Colour;
 	cout << "Type the Auto Motor Output (horse-power): ";
 	cin >> MotorOutput;
 	cout << "Type the Auto Engine Capacity (liter): ";
 	cin >> EngineCapacity;
-	cout << "Type the Auto drive";
-	cin >> strr;
-	drive = strr.c_str();
-	cout << "Type the Auto engine_type";
-	cin >> strr;
-	engine_type = strr.c_str();
+	cout << "Type the Auto drive: ";
+	cin >> drive;
+	cout << "Type the Auto engine_type: ";
+	cin >> engine_type;
 	cout << "Type the Auto Price: ";
 	cin >> Price;
 }
 
 void Sharnin_SUV::PrintAutos()
 {
-	cout << "Model " << this->Model << " Color" << this->Colour << " Motor " << this->MotorOutput << " EngineCapacity " << this->EngineCapacity << " Price " << this->Price << " drive" << this->drive << " engine type" << this->engine_type << endl;
+	cout << "Model " << Model << endl;
+	cout << " Color" << Colour << endl;
+	cout << " Motor " << MotorOutput << endl;
+	cout << " EngineCapacity " << EngineCapacity << endl;
+	cout << " drive " << drive << endl;
+	cout << " engine type " << engine_type << endl;
+	cout << " Price " << Price << endl;
+	cout << "++++++++++++++++++++++++++" << endl;
 }
+
 Sharnin_SUV::Sharnin_SUV()
 {
 	//cout << "constr SUV" <<endl;
