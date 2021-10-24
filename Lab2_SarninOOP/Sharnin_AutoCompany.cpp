@@ -27,22 +27,19 @@ void Sharnin_AutoCompany ::PrintAutos()
 
 void Sharnin_AutoCompany::WriteAutosToFile()
 {
-	if (Company.size() != 0) {
-		string filename;
-		CString name_of_file;
-		cout << "Enter the name of file: ";
-		cin.ignore();
-		getline(cin, filename);
-		name_of_file = filename.c_str();
-		CFile f(name_of_file, CFile::modeCreate | CFile::modeWrite);
-		CArchive ar(&f, CArchive::store);
-		ar << Company.size();
-		for (auto &st : Company) {
-			ar << st.get();
-		}
-		Company.clear();
+	string filename;
+	CString name_of_file;
+	cout << "Enter the name of file: ";
+	cin.ignore();
+	getline(cin, filename);
+	name_of_file = filename.c_str();
+	CFile f(name_of_file, CFile::modeCreate | CFile::modeWrite);
+	CArchive ar(&f, CArchive::store);
+	ar << Company.size();
+	for (auto &st : Company) {
+		ar << st.get();
 	}
-	else cout << "There aren't any added autos" << endl;
+	//Company.clear();
 }
 
 void Sharnin_AutoCompany::ReadAutosFromFile()
